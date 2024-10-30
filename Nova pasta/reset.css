@@ -1,0 +1,33 @@
+// Inicialização do Swiper
+const swiper = new Swiper('.swiper', {
+    // Espaçamento entre os slides
+    spaceBetween: 10,
+    // Número de slides visíveis
+    slidesPerView: 3,
+    // Configurações de paginação
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    // Configurações de navegação
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // Quebra de pontos para responsividade
+    breakpoints: {
+        // Para telas menores que 640px
+        640: {
+            slidesPerView: 1,
+        },
+        // Para telas entre 640px e 768px
+        768: {
+            slidesPerView: 2,
+        },
+        // Para telas maiores que 1024px
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
